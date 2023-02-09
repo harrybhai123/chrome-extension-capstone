@@ -65,12 +65,14 @@ function getTimeAndDate() {
   let hours = date.getHours();
   let timeOfDay;
 
-  if (hours < 12) {
+  if (hours < 12 && hours > 6) {
     timeOfDay = "Good Morning 🌄";
   } else if (hours >= 12 && hours < 17) {
     timeOfDay = "Good Afternoon 🕑";
+  } else if(hours > 17 && hours < 20) {
+    timeOfDay = "Good Evening 🌃";
   } else {
-    timeOfDay = "Good Night 😴";
+    timeOfDay = "Good Night 😴"
   }
 
   timeGreet.textContent = timeOfDay;
