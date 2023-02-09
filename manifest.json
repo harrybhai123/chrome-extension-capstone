@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Harrys Tab Extension",
+  "version": "1.0.0",
+  "description": "Just For Fun And Practicing JS",
+  "action": {
+    "default_icon": "icon.png"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  }
+}
